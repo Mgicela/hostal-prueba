@@ -1,0 +1,474 @@
+/*
+Ancho del sitio 1000px
+mínimo ancho adaptable 600px
+*/
+* {
+	margin: 0;
+	padding: 0;
+}
+BODY {
+	background-image: url("../img/fondo.avif");
+}
+HR {
+	margin:  20px 0;
+	border:  1px groove skyblue;
+}
+
+/*
+-----------------------------------
+------------- TABLAS --------------
+-----------------------------------
+*/
+
+
+ARTICLE SECTION TABLE {
+	margin: 10px auto;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	border: 3px solid black;
+	border-spacing: 0;
+}
+ARTICLE SECTION TABLE TH {
+	text-align: center;
+	padding: 5px 1px;
+	font-size: 1.2em;
+	font-weight: bolder;
+	color: rgb(0, 255, 140);
+	background-color: #0e2472;
+}
+ARTICLE SECTION TABLE TR:nth-of-type(odd) {
+	background-color: #adc3ff;
+}
+ARTICLE SECTION TABLE TR:nth-of-type(even) {
+	background-color: #7baafc;
+}
+ARTICLE SECTION TABLE TR TD {
+	padding: 5px 1px;
+	text-align: center;
+	color: #0e2472;
+	font-size: 1.1em;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+
+/*
+-----------------------------------
+------------- Título --------------
+-----------------------------------
+*/
+#cajaTitulo {
+	margin: auto;
+	min-width: 600px;
+	max-width: 1500px;
+	height: 140px;
+	text-align: center;
+	background-color: #171716;
+}
+#cajaTitulo IMG {
+	position: left;
+	top: 1px;
+	left: 90%;
+	margin-left: -1200px;
+	width: 200px;
+	height: 135px;
+	z-index: 2;
+}
+#cajaTitulo FIGCAPTION {
+	opacity: 0.8;
+	position: absolute;
+	width: 500px;
+	top: 12px;
+	left:50%;
+	margin-left:-250px;
+	z-index: 2;
+}
+#cajaTitulo FIGCAPTION:hover {
+	color: #081d38;
+	cursor: pointer;
+}
+#cajaTitulo FIGCAPTION H1 {
+	color: rgb(230, 43, 15);
+	text-shadow: 1px 1px 1px black;
+}
+#cajaTitulo FIGCAPTION P {
+	font-size: 1.4em;
+	font-weight: bolder;
+	color: rgb(217, 26, 22);
+	text-shadow: 1px 1px 1px black;
+}
+/*
+-----------------------------------
+---------- Menú Principal ---------
+-----------------------------------
+*/
+#cajamenuprincipal {
+    margin: auto;
+    padding: 10px 0;
+    min-width: 700px;
+    max-width: 1500px;
+    text-align: center;
+    background-color: #e7ede6; /* Color de fondo más suave */
+    border-top: 4px solid #a73b3b;
+    border-bottom: 4px solid #a83d3d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadir una sombra sutil */
+}
+
+#cajamenuprincipal ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#cajamenuprincipal ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#cajamenuprincipal a {
+    color: #333; /* Color de texto más oscuro para mejor legibilidad */
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #e2735a;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+#cajamenuprincipal a:hover {
+    background-color: #e5ad93; /* Cambia a un azul más atractivo al pasar el cursor */
+    color: white;
+}
+
+#cajamenuprincipal ul li {
+    margin: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+}
+#cajaMenuPrincipal {
+	margin: auto;
+	padding: 4px 0;
+	min-width: 700px;
+	max-width: 1500px;
+	text-align: center;
+	background-color:#3274b6;
+	border-top:3px groove black;
+	border-bottom:3px groove black;
+}
+#cajaMenuPrincipal A,
+#cajaMenuPrincipal UL LI {
+	display: inline-block;
+	padding: 2px 3px;
+	text-decoration: none;
+	list-style: none;
+	background-color: black;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+#cajaMenuPrincipal A {
+	color: firebrick;
+	font-size: 1.1em;
+	background-color: #fcca5f;
+	text-shadow:  1px 1px 1px black;
+}
+#cajaMenuPrincipal A:hover {
+	background-color: skyblue;
+}
+#cajaMenuPrincipal UL LI {
+	margin: 3px;
+	box-shadow:  3px 3px 3px black;
+}
+
+/*
+-----------------------------------
+------------ Contenido ------------
+-----------------------------------
+*/
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: #9c9494;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos para los grupos de formularios */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Aplicar estilos a los campos de texto, email, teléfono, fecha y textarea, precio*/
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"]
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color: #f4f4f4;
+}
+
+/* Enfocar los inputs y el select */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+input[type="number"] {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    /* Personalizar el color del texto y el fondo */
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+
+button {
+    width: 100%; /* O cualquier valor en píxeles o porcentaje */
+    height: 50px; /* Aumenta la altura */
+    background-color: #97be98; /* Color de fondo */
+    color: rgb(8, 16, 6); /* Color del texto */
+    padding: 15px; /* Aumenta el padding */
+    border: none;
+    border-radius: 4px;
+    font-size: 18px; /* Tamaño del texto */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* Para centrar el formulario */
+.form-container {
+    width: 100%;
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 50px auto; /* Centrado horizontal y espacio vertical */
+    background-color: #cad0ca;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#cajaContenido {
+	display: flex;
+	margin: auto;
+	min-width: 600px;
+	max-width: 1000px;
+	background-color: #ffffff;
+}
+#cajaContenido #cajaEntradas {
+	padding: 10px 5px;
+	margin: 5px 20px 10px 3px;
+	flex: 3;
+	border-right: 3px groove skyblue;
+}
+#cajaContenido #cajaEntradas ARTICLE HEADER {
+	margin: 5px 0;
+	color: white;
+	text-align: center;
+	border:  2px groove black;
+	background-color: #103f77;
+	border-radius:  5px;
+	box-shadow: 2px 2px 2px black;
+}
+#cajaContenido #cajaEntradas ARTICLE HEADER H2 {
+	color: rgb(100, 255, 0);
+	background-color: #5a71ad;
+	text-shadow: 1px 1px 1px black;
+}
+#cajaContenido #cajaEntradas ARTICLE SECTION {
+	margin: 14px 0;
+}
+#cajaContenido #cajaEntradas ARTICLE SECTION H3 {
+	color: #5a71ad;
+	font-size: 1.3em;
+	text-shadow: 1px 1px 1px black;
+	border-bottom: 3px groove black;
+}
+/*
+-----------------------------------
+-------------- Aside --------------
+-----------------------------------
+*/
+.buttonderedireccion {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px; /* Espacio arriba */
+    color: white; /* Color del texto */
+    background-color: #154578; /* Color de fondo */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.button:hover {
+    background-color: #747f8b; /* Color al pasar el mouse */
+}
+
+.image-container {
+    display: center;
+    justify-content: last baseline; /* Centra las imágenes en el contenedor */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.mi-imagen {
+    max-width: 50%; /* Asegura que las imágenes no excedan el tamaño de su contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    border: 2px solid #ccc; /* Añade un borde a todas las imágenes */
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: transform 0.3s; /* Efecto suave al hacer hover */
+}
+
+.mi-imagen:hover {
+    transform: scale(1.05); /* Aumenta ligeramente la imagen al pasar el ratón */
+}
+.grid-container {
+    display: grid; /* Activa CSS Grid */
+    grid-template-columns: repeat(2, 1fr); /* Crea dos columnas del mismo tamaño */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.mi-imagen {
+    max-width: 80%; /* Asegúrate de que las imágenes sean responsivas */
+    height: auto; 
+    border: 3px solid #ccc; /* Estilo opcional para las imágenes */
+}
+
+
+/*
+-----------------------------------
+-------------- Footer -------------
+-----------------------------------
+*/
+
+FOOTER {
+	margin: 0 auto 10px auto;
+	min-width: 600px;
+	max-width: 1000px;
+	border-top:3px groove black;
+	background-color:#103f77;
+}
+FOOTER P {
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+FOOTER P A {
+	color: yellow;
+}
+FOOTER #cajaEnlacesFooter {
+	margin: auto;
+	width: 100%;
+	display: flex;
+}
+FOOTER #cajaEnlacesFooter NAV {
+	flex: 1;
+}
+FOOTER #cajaEnlacesFooter NAV UL {
+	margin: 5px 0;
+	padding: 8px 0;
+	border-top:  3px groove rgb(185, 230, 184);
+	border-bottom:  3px groove skyblue;
+}
+FOOTER #cajaEnlacesFooter NAV UL LI {
+	padding: 5px;
+	list-style: none;
+	text-align: end;
+}
+FOOTER #cajaEnlacesFooter NAV UL LI A {
+	margin: auto;
+	padding:  5px ;
+	color:  orange;
+}
+FOOTER #cajaEnlacesFooter NAV UL LI A:hover {
+	color: white;
+}
+FOOTER #cajaEnlacesFooter NAV UL LI A:visited {
+	color: red;
+}
+
+/*
+-----------------------------------
+------------- Agregar -------------
+-----------------------------------
+*/
+.agregar {
+	padding: 10px 8px;
+	cursor: pointer;
+	font-size: 1.4em;
+	text-align: right;
+	color: darkcyan;
+	font-weight: bolder;
+}
+.agregar:hover {
+	text-decoration: underline;
+}
+
+/*
+-----------------------------------
+------------- Buscar --------------
+-----------------------------------
+*/
+#buscar {
+	display: none;
+}
+#buscar FORM {
+	margin: auto;
+	text-align: center;
+}
+#busqueda {
+	display: none;
+}
+
+/*
+-----------------------------------
+--------------- Subir -------------
+-----------------------------------
+*/
+#subir {
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+#subir:visited {
+	color: white;
+}
+#subir DIV {
+	font-size: 1.2em;
+	background-color: black;
+}
+#subir DIV:hover {
+	background-color: red;
+}
